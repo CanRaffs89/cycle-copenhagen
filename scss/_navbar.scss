@@ -1,0 +1,47 @@
+.navbar {
+    height: 60px;
+    width: 100%;
+    background-color: $red;
+
+    div {
+        height: 60px;
+        margin: 0 10px;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .icon-menu {
+            cursor: pointer;
+        }
+
+        #hamburger {
+            width: 25px;
+            height: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            div {
+                width: 25px;
+                height: 3px;
+                background-color: #fff;
+                border-radius: 25%;
+            }
+        }
+
+        #logo {
+            height: 50px;
+            width: 44px;
+            background: url('../img/logo.svg') no-repeat;
+        }
+
+        #login {
+            height: 30px;
+            width: 30px;
+            background: url('../img/icon_login.svg') no-repeat;
+            background-size: contain;
+        }
+    }
+}
+

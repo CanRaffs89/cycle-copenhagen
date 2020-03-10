@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="104px" height="104px" viewBox="0 0 104 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>code_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="desktop" transform="translate(-885.000000, -144.000000)" stroke="#BB3939">
+            <g id="code_icon" transform="translate(887.000000, 146.000000)">
+                <circle id="Oval" fill="#BB3939" cx="49.957568" cy="50.957568" r="6.95756797"></circle>
+                <circle id="Oval" cx="49.957568" cy="71.957568" r="6.95756797"></circle>
+                <circle id="Oval" fill="#BB3939" cx="49.957568" cy="28.957568" r="6.95756797"></circle>
+                <circle id="Oval" fill="#BB3939" cx="70.957568" cy="50.957568" r="6.95756797"></circle>
+                <circle id="Oval" fill="#BB3939" cx="70.957568" cy="71.957568" r="6.95756797"></circle>
+                <circle id="Oval" cx="70.957568" cy="28.957568" r="6.95756797"></circle>
+                <circle id="Oval" cx="29.957568" cy="50.957568" r="6.95756797"></circle>
+                <circle id="Oval" cx="29.957568" cy="71.957568" r="6.95756797"></circle>
+                <circle id="Oval" cx="29.957568" cy="28.957568" r="6.95756797"></circle>
+                <circle id="Oval" stroke-width="3" cx="50" cy="50" r="50"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="527px" height="960px" viewBox="0 0 527 960" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>red_overlay</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M527,965 C458.039849,806.16681 423.610214,646.16681 423.711095,485 C423.811975,323.83319 458.24161,162.166524 527,0 L1.13686838e-13,-2 L1.13686838e-13,965 L527,965 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="desktop">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="red_overlay" fill="#BB3939" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="104px" height="104px" viewBox="0 0 104 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>lock_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="desktop" transform="translate(-720.000000, -144.000000)">
+            <g id="lock_icon" transform="translate(722.000000, 146.000000)">
+                <rect id="Rectangle" fill="#BB3939" x="28" y="46" width="47" height="36" rx="8"></rect>
+                <path d="M39.527172,47.6878488 C37.4749823,28.5626163 41.4144079,19 51.3454488,19 C61.2764898,19 65.2159153,28.5626163 63.1637256,47.6878488" id="Path" stroke="#BB3939" stroke-width="6"></path>
+                <ellipse id="Oval" fill="#FFFFFF" cx="51.7926504" cy="59.7019354" rx="4.79265044" ry="4.70193541"></ellipse>
+                <polygon id="Triangle" fill="#FFFFFF" points="51.7926504 58 56.5853009 73.673118 47 73.673118"></polygon>
+                <circle id="Oval" stroke="#BB3939" stroke-width="3" cx="50" cy="50" r="50"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
