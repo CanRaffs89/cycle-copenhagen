@@ -5,11 +5,14 @@ $red: #BB3939;
     font-family: 'Din Condensed';
 }
 
-body {
-    height: calc(100% - 60px);
-    width: 100%;
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%; 
 }
 
 li {
@@ -28,3 +31,4 @@ a {
 // Imports
 @import 'navbar';
 @import 'side-menu';
+@import 'header';

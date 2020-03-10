@@ -1,0 +1,21 @@
+.header {
+    height: calc(100% - 60px);
+    width: 100%;
+    // background: url('../img/bg_vector_sm.svg') no-repeat;
+    // background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+
+    p {
+        font-size: 26px;
+        letter-spacing: 5px;
+        color: $red;
+    }
+
+    p:last-of-type {
+        border-top: 2px solid $red 
+    }
+}
