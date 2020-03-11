@@ -1,21 +1,48 @@
 .header {
     height: calc(100% - 60px);
     width: 100%;
-    // background: url('../img/bg_vector_sm.svg') no-repeat;
-    // background-position: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     overflow: hidden;
 
-    p {
-        font-size: 26px;
-        letter-spacing: 5px;
-        color: $red;
-    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
 
-    p:last-of-type {
-        border-top: 2px solid $red 
+        p {
+            font-size: 26px;
+            letter-spacing: 5px;
+            color: $red;
+            margin: 10px 0;
+        }
+    
+        span {
+            height: 2px;
+            width: 60%;
+            background-color: $red;
+        }
+
+        button {
+            height: 40px;
+            width: 150px;
+            font-family: 'Din Condensed';
+            font-size: 23px;
+            letter-spacing: 3.85px;
+            background: $red;
+            border: none;
+            border-radius: 25px;
+            margin-top: 5%;
+
+            a {
+                color: #fff;
+
+                &:hover {
+                    color: #ccc;
+                }
+            }
+        }
     }
 }

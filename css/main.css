@@ -9,7 +9,7 @@
 }
 
 body {
-  height: 100%;
+  height: calc(100vh - 60px);
   width: 100%;
 }
 
@@ -88,7 +88,7 @@ a {
 
 .side-menu {
   position: absolute;
-  left: -600px;
+  left: -1000px;
   width: 100%;
   height: calc(100% - 60px);
   background-color: #BB3939;
@@ -129,21 +129,99 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   overflow: hidden;
 }
 
-.header p {
+.header .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.header .text p {
   font-size: 26px;
   letter-spacing: 5px;
   color: #BB3939;
+  margin: 10px 0;
 }
 
-.header p:last-of-type {
-  border-top: 2px solid #BB3939;
+.header .text span {
+  height: 2px;
+  width: 60%;
+  background-color: #BB3939;
+}
+
+.header .text button {
+  height: 40px;
+  width: 150px;
+  font-family: 'Din Condensed';
+  font-size: 23px;
+  letter-spacing: 3.85px;
+  background: #BB3939;
+  border: none;
+  border-radius: 25px;
+  margin-top: 5%;
+}
+
+.header .text button a {
+  color: #fff;
+}
+
+.header .text button a:hover {
+  color: #ccc;
+}
+
+.section {
+  height: 358px;
+  width: 100%;
+  background: #BB3939;
+}
+
+.section .section-text {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section .section-text div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .section-text h1, .section .section-text p {
+  color: #fff;
+}
+
+.section .section-text h1 {
+  font-size: 32px;
+  letter-spacing: 3.73px;
+  text-transform: uppercase;
+}
+
+.section .section-text p {
+  font-size: 26px;
+  letter-spacing: 5px;
 }
