@@ -8,6 +8,7 @@ $red: #BB3939;
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -26,6 +27,12 @@ a {
 .container {
     height: 100vh;
     width: 100%;
+}
+
+@mixin vertical-center($position: relative) {
+    position: $position;
+    top: 50%;
+    transform: translatey(-50%);
 }
 
 // Imports

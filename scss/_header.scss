@@ -1,5 +1,6 @@
 .header {
     height: calc(100% - 60px);
+    min-height: 470px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -13,7 +14,7 @@
         margin-top: 20px;
 
         p {
-            font-size: 26px;
+            font-size: 1.5rem;
             letter-spacing: 5px;
             color: $red;
             margin: 10px 0;
@@ -26,15 +27,14 @@
         }
 
         button {
-            height: 40px;
-            width: 150px;
+            height: 35px;
+            width: 140px;
             font-family: 'Din Condensed';
-            font-size: 23px;
+            font-size: 1.25rem;
             letter-spacing: 3.85px;
             background: $red;
             border: none;
             border-radius: 25px;
-            margin-top: 5%;
 
             a {
                 color: #fff;
@@ -44,5 +44,12 @@
                 }
             }
         }
+    }
+
+    #header-bg-img {
+        min-height: 300px;
+        background: url(../img/bg_vector_lg.svg) no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 }

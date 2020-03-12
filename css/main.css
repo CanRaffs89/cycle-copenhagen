@@ -6,6 +6,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -88,7 +90,7 @@ a {
 
 .side-menu {
   position: absolute;
-  left: -1000px;
+  left: -2000px;
   width: 100%;
   height: calc(100% - 60px);
   background-color: #BB3939;
@@ -121,6 +123,7 @@ a {
 
 .header {
   height: calc(100% - 60px);
+  min-height: 470px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,7 +152,7 @@ a {
 }
 
 .header .text p {
-  font-size: 26px;
+  font-size: 1.5rem;
   letter-spacing: 5px;
   color: #BB3939;
   margin: 10px 0;
@@ -162,15 +165,14 @@ a {
 }
 
 .header .text button {
-  height: 40px;
-  width: 150px;
+  height: 35px;
+  width: 140px;
   font-family: 'Din Condensed';
-  font-size: 23px;
+  font-size: 1.25rem;
   letter-spacing: 3.85px;
   background: #BB3939;
   border: none;
   border-radius: 25px;
-  margin-top: 5%;
 }
 
 .header .text button a {
@@ -181,6 +183,13 @@ a {
   color: #ccc;
 }
 
+.header #header-bg-img {
+  min-height: 300px;
+  background: url(../img/bg_vector_lg.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .section {
   height: 358px;
   width: 100%;
@@ -188,8 +197,8 @@ a {
 }
 
 .section .section-text {
-  height: 100%;
-  width: 80%;
+  height: 80%;
+  width: 75%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,6 +209,11 @@ a {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  border-left: 2px solid #fff;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
 }
 
 .section .section-text div {
@@ -209,6 +223,13 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 20px;
+}
+
+.section .section-text div img {
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
 }
 
 .section .section-text h1, .section .section-text p {
@@ -219,6 +240,7 @@ a {
   font-size: 32px;
   letter-spacing: 3.73px;
   text-transform: uppercase;
+  margin-left: 20px;
 }
 
 .section .section-text p {
