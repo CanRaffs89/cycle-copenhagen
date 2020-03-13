@@ -2,13 +2,13 @@ $red: #BB3939;
 
 :root {
     font-size: 16px;
-    font-family: 'Din Condensed';
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Din Condensed';
 }
 
 body {
@@ -41,3 +41,4 @@ a {
 @import 'header';
 @import 'text-section';
 @import 'map-section';
+@import 'footer';

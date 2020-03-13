@@ -1,6 +1,5 @@
 :root {
   font-size: 16px;
-  font-family: 'Din Condensed';
 }
 
 * {
@@ -8,6 +7,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Din Condensed';
 }
 
 body {
@@ -185,6 +185,7 @@ a {
 
 .header #header-bg-img {
   min-height: 300px;
+  height: 40%;
   background: url(../img/bg_vector_lg.svg) no-repeat;
   background-size: cover;
   background-position: center;
@@ -277,4 +278,87 @@ a {
   top: 50%;
   -webkit-transform: translatey(-50%);
           transform: translatey(-50%);
+}
+
+.footer {
+  min-height: 190px;
+  width: 100%;
+  background: #BB3939;
+}
+
+.footer h2 {
+  font-size: 18px;
+  letter-spacing: 3.22px;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.footer .textbox {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #fff;
+}
+
+.footer .textbox input {
+  width: 180px;
+  height: 25px;
+  font-size: 15px;
+  letter-spacing: 3.22px;
+  border: none;
+  border-radius: 0;
+}
+
+.footer .textbox button {
+  width: 100px;
+  height: 25px;
+  background: #D8D8D8;
+  font-size: 15px;
+  letter-spacing: 3.22px;
+  color: #BB3939;
+  border: none;
+}
+
+.footer .footer-icons {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 15px;
+  margin: 0 auto;
+}
+
+.footer .footer-icons .footer-icon {
+  height: 35px;
+  width: 35px;
+}
+
+.footer .footer-icons #english-icon {
+  background: url("../img/icon_english.svg");
+  background-size: contain;
+}
+
+.footer .footer-icons #danish-icon {
+  background: url("../img/icon_dansk.svg");
+  background-size: contain;
+}
+
+.footer .footer-icons #twitter-icon {
+  background: url("../img/icon_twitter.svg");
+  background-size: contain;
+}
+
+.footer .footer-icons #facebook-icon {
+  background: url("../img/icon_facebook.svg");
+  background-size: contain;
 }
