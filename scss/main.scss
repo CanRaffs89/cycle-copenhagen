@@ -29,15 +29,23 @@ a {
     width: 100%;
 }
 
+// Media & Mixins
 @mixin vertical-center($position: relative) {
     position: $position;
     top: 50%;
     transform: translatey(-50%);
 }
 
+@media (min-width: 1040px) {
+    .hidden-on-desktop {
+        display: none;
+    }
+}
+
 // Imports
 @import 'navbar';
 @import 'side-menu';
+@import 'desktop-overlay';
 @import 'header';
 @import 'text-section';
 @import 'map-section';

@@ -28,6 +28,12 @@ a {
   width: 100%;
 }
 
+@media (min-width: 1040px) {
+  .hidden-on-desktop {
+    display: none;
+  }
+}
+
 .navbar {
   height: 60px;
   width: 100%;
@@ -88,6 +94,27 @@ a {
   background-size: contain;
 }
 
+@media (min-width: 1040px) {
+  .navbar {
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+  }
+  .navbar div {
+    height: 10%;
+    width: 60px;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar div .icon-menu {
+    margin-top: 15px;
+  }
+}
+
 .side-menu {
   position: absolute;
   left: -2000px;
@@ -119,6 +146,64 @@ a {
   letter-spacing: 3.73px;
   text-transform: uppercase;
   margin-left: 30px;
+}
+
+#desktop-overlay {
+  height: 100%;
+  width: 527px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url("../img/red_overlay.svg") no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 60px;
+}
+
+#desktop-overlay .overlay-text {
+  height: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-left: 2px solid #fff;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+}
+
+#desktop-overlay .overlay-text #logo-desktop {
+  height: 270px;
+  width: 240px;
+  background: url("../img/logo.svg") no-repeat;
+  background-size: contain;
+  margin: 0 50px;
+}
+
+#desktop-overlay .overlay-text #text-desktop {
+  color: #fff;
+  font-size: 60px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  margin: 0 50px;
+  line-height: 60px;
+}
+
+@media (max-width: 1039px) {
+  #desktop-overlay {
+    display: none;
+  }
 }
 
 .header {
@@ -189,6 +274,34 @@ a {
   background: url(../img/bg_vector_lg.svg) no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media (min-width: 638px) {
+  .header {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .header .text p {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+  .header .text button {
+    height: 45px;
+    width: 160px;
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 1040px) {
+  .header {
+    height: 100vh;
+  }
+  .header #header-bg-img {
+    height: 60%;
+    background-position: right;
+    background-size: contain;
+  }
 }
 
 .section {

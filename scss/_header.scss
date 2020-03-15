@@ -54,3 +54,34 @@
         background-position: center;
     }
 }
+
+@media (min-width: 638px) {
+    .header {
+        justify-content: space-evenly;
+
+        .text {
+            p {
+                font-size: 2rem;
+                margin: 20px 0;
+            }
+
+            button {
+                height: 45px;
+                width: 160px;
+                font-size: 1.75rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1040px) {
+    .header {
+        height: 100vh;
+
+        #header-bg-img {
+            height: 60%;
+            background-position: right;
+            background-size: contain;
+        }
+    }
+}

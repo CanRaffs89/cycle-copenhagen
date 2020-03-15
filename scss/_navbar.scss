@@ -45,3 +45,24 @@
     }
 }
 
+@media (min-width: 1040px) {
+    .navbar {
+        width: 60px;
+        height: 100%;
+        position: absolute;
+        z-index: 5;
+        // border-right: 2px solid #fff;
+
+        div {
+            height: 10%;
+            width: 60px;
+            margin: 0;
+            flex-direction: column;
+
+            .icon-menu {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
