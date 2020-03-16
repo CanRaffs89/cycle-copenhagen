@@ -38,7 +38,13 @@ a {
 
 @media (min-width: 1040px) {
     .hidden-on-desktop {
-        display: none;
+        display: none !important;
+    }
+}
+
+@media (max-width: 1040px) {
+    .hidden-on-mobile {
+        display: none !important;
     }
 }
 

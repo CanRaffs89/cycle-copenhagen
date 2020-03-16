@@ -11,8 +11,14 @@
         justify-content: space-between;
         align-items: center;
 
+        .icons-first {
+            width: 100%;
+        }
+
         .icon-menu {
             cursor: pointer;
+            height: 30px;
+            width: 30px;
         }
 
         #hamburger {
@@ -37,9 +43,27 @@
         }
 
         #login {
-            height: 30px;
-            width: 30px;
             background: url('../img/icon_login.svg') no-repeat;
+            background-size: contain;
+        }
+
+        #twitter {
+            background: url('../img/icon_twitter.svg') no-repeat;
+            background-size: contain;
+        }
+
+        #facebook {
+            background: url('../img/icon_facebook.svg') no-repeat;
+            background-size: contain;
+        }
+
+        #english {
+            background: url('../img/icon_english.svg') no-repeat;
+            background-size: contain;
+        }
+
+        #dansk {
+            background: url('../img/icon_dansk.svg') no-repeat;
             background-size: contain;
         }
     }
@@ -50,17 +74,25 @@
         width: 60px;
         height: 100%;
         position: absolute;
-        z-index: 5;
-        // border-right: 2px solid #fff;
+        z-index: 1;
 
         div {
-            height: 10%;
+            height: 100%;
             width: 60px;
             margin: 0;
             flex-direction: column;
+            justify-content: flex-start;
 
             .icon-menu {
                 margin-top: 15px;
+            }
+
+            .icons-second {
+                justify-content: flex-end;
+
+                #dansk {
+                    margin-bottom: 15px;
+                }
             }
         }
     }

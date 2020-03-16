@@ -30,7 +30,13 @@ a {
 
 @media (min-width: 1040px) {
   .hidden-on-desktop {
-    display: none;
+    display: none !important;
+  }
+}
+
+@media (max-width: 1040px) {
+  .hidden-on-mobile {
+    display: none !important;
   }
 }
 
@@ -55,8 +61,14 @@ a {
           align-items: center;
 }
 
+.navbar div .icons-first {
+  width: 100%;
+}
+
 .navbar div .icon-menu {
   cursor: pointer;
+  height: 30px;
+  width: 30px;
 }
 
 .navbar div #hamburger {
@@ -88,9 +100,27 @@ a {
 }
 
 .navbar div #login {
-  height: 30px;
-  width: 30px;
   background: url("../img/icon_login.svg") no-repeat;
+  background-size: contain;
+}
+
+.navbar div #twitter {
+  background: url("../img/icon_twitter.svg") no-repeat;
+  background-size: contain;
+}
+
+.navbar div #facebook {
+  background: url("../img/icon_facebook.svg") no-repeat;
+  background-size: contain;
+}
+
+.navbar div #english {
+  background: url("../img/icon_english.svg") no-repeat;
+  background-size: contain;
+}
+
+.navbar div #dansk {
+  background: url("../img/icon_dansk.svg") no-repeat;
   background-size: contain;
 }
 
@@ -99,19 +129,30 @@ a {
     width: 60px;
     height: 100%;
     position: absolute;
-    z-index: 5;
+    z-index: 1;
   }
   .navbar div {
-    height: 10%;
+    height: 100%;
     width: 60px;
     margin: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .navbar div .icon-menu {
     margin-top: 15px;
+  }
+  .navbar div .icons-second {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .navbar div .icons-second #dansk {
+    margin-bottom: 15px;
   }
 }
 
@@ -301,6 +342,7 @@ a {
     height: 60%;
     background-position: right;
     background-size: contain;
+    margin-top: 150px;
   }
 }
 
