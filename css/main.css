@@ -344,6 +344,61 @@ a {
     background-size: contain;
     margin-top: 150px;
   }
+  .header .text-desktop {
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .text-desktop h1 {
+    color: #BB3939;
+    font-size: 54px;
+    letter-spacing: 6.3px;
+    line-height: 54px;
+    text-transform: uppercase;
+    margin: auto 20px;
+    cursor: pointer;
+  }
+  .header .text-desktop .text-desktop-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 200px;
+    width: 500px;
+    border-left: #BB3939 2px solid;
+    border-right: #BB3939 2px solid;
+    padding: 0 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .text-desktop .text-desktop-icons div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 10px;
+  }
+  .header .text-desktop .text-desktop-icons img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  .header .text-desktop .text-desktop-icons p {
+    color: #BB3939;
+    font-size: 36px;
+    letter-spacing: 7px;
+    line-height: 36px;
+    text-align: center;
+  }
 }
 
 .section {

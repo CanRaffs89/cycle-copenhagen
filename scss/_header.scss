@@ -84,5 +84,53 @@
             background-size: contain;
             margin-top: 150px;
         }
+
+        .text-desktop {
+            position: absolute;
+            left: 35%;
+            top: 10%;
+            display: flex;
+
+            h1 {
+                color: $red;
+                font-size: 54px;
+                letter-spacing: 6.3px;
+                line-height: 54px;
+                text-transform: uppercase;
+                margin: auto 20px;
+                cursor: pointer;
+            }
+
+            .text-desktop-icons {
+                display: flex;
+                height: 200px;
+                width: 500px;
+                border-left: $red 2px solid;
+                border-right: $red 2px solid;
+                padding: 0 20px;
+                justify-content: center;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 0 10px;
+                }
+
+                img {
+                    height: 100px;
+                    width: 100px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    color: $red;
+                    font-size: 36px;
+                    letter-spacing: 7px;
+                    line-height: 36px;
+                    text-align: center;
+                }
+            }
+        }
     }
 }
