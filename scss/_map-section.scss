@@ -22,3 +22,23 @@
         }
     }
 }
+
+@media (min-width: 1040px) {
+    .map {
+        height: 60vh; 
+        width: 50%; 
+
+        .map-overlay {
+            height: 100%;
+            top: 0;
+            transform: translateX(100%);
+
+            .map-text {
+                font-size: 54px;
+                letter-spacing: 7px;
+                text-transform: uppercase;
+                width: 50%;
+            }
+        }
+    }
+}    

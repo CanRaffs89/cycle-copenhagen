@@ -71,4 +71,31 @@
             background-size: contain;
         }
     }
-}    
+} 
+
+@media (min-width: 1040px) {
+    .footer {
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            font-size: 22px;
+        }
+
+        .textbox {
+            input {
+                width: 300px;
+                height: 40px;
+                font-size: 15px;
+            }
+    
+            button {
+                width: 120px;
+                height: 40px;
+                font-size: 15px;
+            }
+        }
+    }
+}
