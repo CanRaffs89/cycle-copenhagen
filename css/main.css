@@ -41,6 +41,7 @@ a {
 }
 
 .navbar {
+  z-index: 2;
   height: 60px;
   width: 100%;
   background-color: #BB3939;
@@ -129,7 +130,6 @@ a {
     width: 60px;
     height: 100%;
     position: absolute;
-    z-index: 1;
   }
   .navbar div {
     height: 100%;
@@ -156,15 +156,19 @@ a {
   }
 }
 
-.side-menu {
+#side-menu {
+  z-index: 1;
   position: absolute;
   left: -2000px;
   width: 100%;
+  max-width: 786px;
   height: calc(100% - 60px);
   background-color: #BB3939;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-.side-menu div {
+#side-menu div {
   height: 282px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,12 +185,26 @@ a {
   border-left: 2px solid #fff;
 }
 
-.side-menu div a {
+#side-menu div a {
   color: #fff;
   font-size: 32px;
   letter-spacing: 3.73px;
   text-transform: uppercase;
   margin-left: 30px;
+}
+
+@media (min-width: 1040px) {
+  #side-menu {
+    height: 100%;
+  }
+}
+
+#side-menu.active-large {
+  left: 60px;
+}
+
+#side-menu.active-small {
+  left: 0px;
 }
 
 #desktop-overlay {
